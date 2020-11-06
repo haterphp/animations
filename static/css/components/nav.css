@@ -1,0 +1,39 @@
+.nav{
+    width: 90%;
+}
+
+.nav_white .nav-item{
+    color: var(--white);
+}
+
+.nav-item span{
+    display: block;
+    text-transform: uppercase;
+}
+
+.nav-item span i{
+    margin-right: 10px;
+}
+
+.nav_white .nav-item::before{
+    background: #fff;
+}
+
+/* Before для nav-item */
+
+.nav .nav-item{
+    margin: 10px 0;
+    position: relative;
+    overflow: hidden;
+    background: transparent;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 10px 20px;
+    width: 100%;
+    z-index: 1;
+    border-radius: 1.5rem;
+    transition: color .8s ease-in-out;
+    border: 2px solid transparent;
+}
+
+/* Анимация nav-item */

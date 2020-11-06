@@ -1,0 +1,31 @@
+.form-group{
+    margin-top: 15px;
+    position: relative;
+}
+
+.form-control{
+    z-index: 1;
+    box-shadow: none !important;
+    outline: none !important;
+    background: transparent !important;
+    font-size: 14px;
+    border-radius: .5rem;
+}
+
+.form-control ~ label{
+    left: 14px;
+    padding: 2px;
+    background: var(--white);
+    position: absolute;
+    top: 7px;
+    z-index: -1;
+    font-size: 13px;
+    transition: top .1s ease-in-out;
+}
+
+/* Аниммция label для input.form-control */
+
+
+.form-control:focus{
+    border-color: var(--blue);
+}

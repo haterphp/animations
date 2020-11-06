@@ -1,0 +1,41 @@
+.load_backdrop{
+    background: rgba(255, 255, 255, 1);
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.load{
+    width: 80px;
+    height: 80px;
+    position: relative;
+}
+
+.load__item{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    transform: scale(0);
+    /* Анимация impuls */
+}
+
+/* Задержки анимаций для отдельных ее частей */
+
+.load__item.blue{
+    background-image: linear-gradient(120deg, #5ff1fc 0%, #428ffa 100%);
+}
+
+.load__item.purple{
+    background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
+}
+
+.load__item.yellow{
+    background-image: linear-gradient(120deg, #f7cc42 0%, #fa744e 100%);
+}

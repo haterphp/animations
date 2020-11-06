@@ -1,0 +1,54 @@
+.user__panel{
+    width: 250px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+/* Изменение background при наведение */
+
+.user__panel .wrap.user_info_wrap{
+    margin-left: 15px;
+    width: 70%;
+}
+
+.user__name{
+    font-weight: bold;
+    margin: 0;
+    color: var(--gray-dark);
+    position: relative;
+}
+
+.user__panel.opened i{
+    transform: rotate(180deg);
+    top: 9px;
+}
+
+.user__name i{
+    color: var(--dark) !important;
+    transform-origin: center center;
+    position: absolute;
+    right: 5px;
+    top: 2px;
+    transition: .3s ease-in-out;
+}
+
+.user__state{
+    font-size: 12px;
+    margin: 0;
+}
+
+.user__state span{
+    font-weight: bold;
+}
+
+.user__image{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

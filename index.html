@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/all.min.css">
+
+    <script defer src="static/js/main.js"></script>  
+
+    <title>NoteBook</title>
+</head>
+<body>
+    <div class="page row w-100">
+        <div class="sidebar col-3">
+            <div class="logo sidebar_logo">
+                <h2>Note<span>book</span></h2>
+            </div>
+            <div class="wrap">
+                <nav class="nav nav_white">
+                    <a href="#" class="nav-item">
+                        <span><i class="fa fa-1x fa-home"></i> Home</span>
+                    </a>
+                    <a href="#" class="nav-item">
+                        <span><i class="fa fa-1x fa-plus"></i> Add new note</span>
+                    </a>
+                    <a href="#" class="nav-item">
+                        <span><i class="fa fa-1x fa-sign-out-alt"></i> Exit</span>
+                    </a>
+                </nav>
+            </div>
+        </div>
+        <div class="content col-9">
+            <div class="container">
+                <header class="header w-100 pb-2 pt-3 d-flex align-items-center">
+                    <div class="filter header_filter">
+                        <form>
+                            <div class="form-group">
+                                <input type="text" class="form-control" required>
+                                <label>Filter</label>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="user__panel">
+                        <div class="user__image" style="background-image: url('static/images/default-profile.jpg')"></div>
+                        <div class="wrap user_info_wrap">
+                            <p class="user__name">Lorem Ipsum <i class="fa fa-1x fa-sort-down"></i></p>
+                            <p class="user__state">Active notes: <span>15</span></p>
+                        </div>
+                    </div>
+                </header>
+                <main>
+                    <div class="wrap">
+                        <h1 class="content_title">Notes</h1>
+                        <div class="row w-100">
+                            <div class="col-12 col-md-4">
+                                <div class="card blue" >
+                                    <div class="card-body card_body_white">
+                                        <h3 class="card-title">Lorem Ipsum</h3>   
+                                        <p><i>Created: 04-11-2020</i></p>
+                                        <i class="fa fa-hand-pointer fa-2x card_clicker"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <div class="card purple" >
+                                    <div class="card-body card_body_white">
+                                        <h3 class="card-title">Lorem Ipsum</h3>   
+                                        <p><i>Created: 04-11-2020</i></p>
+                                        <i class="fa fa-hand-pointer fa-2x card_clicker"></i>
+                                    </div>
+                                </div>
+                            </div>                    
+                            <div class="col-12 col-md-4">
+                                <div class="card yellow" >
+                                    <div class="card-body card_body_white">
+                                        <h3 class="card-title">Lorem Ipsum</h3>   
+                                        <p><i>Created: 04-11-2020</i></p>
+                                        <i class="fa fa-hand-pointer fa-2x card_clicker"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <div class="card green" >
+                                    <div class="card-body card_body_white">
+                                        <h3 class="card-title">Lorem Ipsum</h3>   
+                                        <p><i>Created: 04-11-2020</i></p>
+                                        <i class="fa fa-hand-pointer fa-2x card_clicker"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

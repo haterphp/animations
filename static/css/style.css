@@ -1,0 +1,82 @@
+@import "components/logo.css";
+@import "components/nav.css";
+@import "components/form.css";
+@import "components/user-panel.css";
+@import "components/cards.css";
+@import "components/loader.css";
+
+@keyframes impulse{
+    from{
+        transform: scale(0);
+        opacity: 1;
+    }
+    to{
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
+
+@font-face {
+    font-family: "Nunito-Regular";
+    src: url("../fonts/Nunito-Regular.ttf");
+}
+
+:root{
+    --blue: #2ba1ff;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 1.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--blue);
+    border-radius: 1.5rem;
+}
+
+body.no_transition *,
+body.no_transition *::after,
+body.no_transition *::before{
+    transition: none !important;
+}
+
+.page{
+    min-height: 100vh;
+}
+
+.sidebar{
+    background: var(--blue);
+    padding-left: 50px;
+}
+
+.wrap{
+    width: 100%;
+}
+
+.content{
+    height: 100vh;
+    overflow: auto;
+}
+
+.header{
+    margin-bottom: 50px;
+}
+
+.header_filter{
+    width: 100%;
+    margin-right: 25px;
+}
+
+.content_title{
+    font-size: 25px;
+    color: var(--gray-dark);
+}
+
+main .wrap_first{
+    margin-top: 25px;
+}
