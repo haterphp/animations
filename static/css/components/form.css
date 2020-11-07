@@ -23,7 +23,11 @@
     transition: top .1s ease-in-out;
 }
 
-/* Аниммция label для input.form-control */
+.form-control:valid ~ label,
+.form-control:focus ~ label{
+    top: -12px;
+    z-index: 1;
+}
 
 
 .form-control:focus{

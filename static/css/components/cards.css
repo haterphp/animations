@@ -11,41 +11,41 @@
     cursor: pointer;
     transition: .3s ease-in-out;
     margin-top: 20px;
-    /* opacity: 0; */
-    /* transform: scale(0); */
+    opacity: 0;
+    transform: scale(0);
 }
 
 .card.blue{
     background-image: linear-gradient(120deg, #5ff1fc 0%, #428ffa 100%);
 }
 
-/* .card.blue:hover {
+.card.blue:hover {
     box-shadow: 0 0 8px #50bffb;
-} */
+}
 
 .card.purple{
     background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
 }
 
-/* .card.purple:hover {
+.card.purple:hover {
     box-shadow: 0 0 8px #f273b0;
-} */
+}
 
 .card.green{
     background-image: linear-gradient(to right, #25e264 0%, #23f0ca 100%);
 }
 
-/* .card.green:hover {
+.card.green:hover {
     box-shadow: 0 0 8px #24e788;
-} */
+}
 
 .card.yellow{
     background-image: linear-gradient(120deg, #f7cc42 0%, #fa744e 100%);
 }
 
-/* .card.yellow:hover {
+.card.yellow:hover {
     box-shadow: 0 0 8px #f9994a;
-} */
+}
 
 .card-body.card_body_white{
     position: absolute;
@@ -74,7 +74,7 @@
 
 .card:hover .card_body_white::after,
 .card:hover .card_body_white::before{
-    /* Анимация impulse */
+    animation: impulse infinite 1.5s ease-in-out;
 }
 
 .card:hover .card-image img{

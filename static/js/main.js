@@ -11,16 +11,44 @@ const loadTemplate = () => {
     return element;
 }
 
-// Удаление load
-
-const loadRemove = ($element, callback) => {}
+const loadRemove = ($element, callback) => {
+    const timeout = 500;
+    $element.animate([
+        {'opacity': 1},
+        {'opacity': 0}
+    ], {duration: timeout, fill: 'forwards'})
+    setTimeout(() => {
+        $element.remove();
+        if(callback)
+            callback();
+    }, timeout + 10)
+}
 
 const load = (callback = null) => {
     const $element = loadTemplate();
-    // document.querySelector('body').append($element);
-    setTimeout(loadRemove.bind(null, $element, callback), 5900);
+    document.querySelector('body').append($element);
+    setTimeout(() => loadRemove($element, callback), 5900);
 }
 
-// Анимации
+const pageAnimations = () => {
+    const $elements = [...document.querySelectorAll('[data-anim]')]
+    const duration = 200;
+    const pageAnim = new Set();
+    const options = {
+        'scale': { duration }
+    }
+    $elements.forEach(item => pageAnim.add(item.getAttribute('data-anim')))
+    pageAnim.forEach(anim => {
+        const temp = $elements.filter(item => (item.getAttribute('data-anim') == anim))
+        Object.entries(temp).forEach(([key, value]) => window[anim](value, options[anim], key))
+    })
+}
+
+window.scale = ($element, option, number) => {
+    $element.animate([
+        { 'opacity': 0, 'transform': 'scale(0)' },
+        { 'opacity': 1, 'transform': 'scale(1)' }
+    ], {duration: option.duration, delay: number * 200, fill: "forwards"})
+}
 
 load(pageAnimations);
